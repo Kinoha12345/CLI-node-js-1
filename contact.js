@@ -62,8 +62,6 @@ function listContacts() {
             console.log(error);
         } 
         const contacts = JSON.parse(data)
-        // const contAdd = contacts.filter(cont => cont.name !== name, cont.email !== email, cont.phone !== phone);
-        // if (contAdd.length === contacts.length) {
             contacts.push({
                 id: contacts.length + 1,
                 name: name,
@@ -71,8 +69,6 @@ function listContacts() {
                 phone: phone
             })
             console.table(contacts);
-            // return
-        // } 
     })
   }
 
